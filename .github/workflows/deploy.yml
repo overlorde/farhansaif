@@ -9,7 +9,7 @@ jobs:
     steps:
 
       - name: Deploy Nodejs app
-        uses: appleboy/ssh-action@v01.2
+        uses: appleboy/ssh-action@v0.1.2
         with:
           host: ${{secrets.HOST}}
           key: ${{secrets.GITCICD_SECRETS}}
