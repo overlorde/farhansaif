@@ -1,5 +1,4 @@
 #Test deploy
 
 more testing needed.
-
-ami zero
+deleted test and started again.
