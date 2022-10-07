@@ -21,6 +21,6 @@ jobs:
 
             cd /home/saif/deploy/farhansaif
 
-            git pull origin farhansaif
+            git pull origin main
 
             echo 'Deployment Successful to artemis'
