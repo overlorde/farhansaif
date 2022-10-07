@@ -21,5 +21,5 @@ jobs:
           script: |
             mkdir test
             cd test
-            git clone git@github.com/farhansaif.git
+            git clone git@github.com:overlorde/farhansaif.git
             echo 'Deployment Successful to artemis'
