@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Deploy Nodejs app
+      - name: Deploy some app
         uses: appleboy/ssh-action@v0.1.2
         with:
           host: ${{secrets.HOST}}
@@ -22,8 +22,12 @@ jobs:
 
             mkdir projects
 
-            cd clox
+            cd projects
 
             git clone https://github.com/overlorde/clox.git
+
+            cd clox
+
+            make
 
             echo 'Deployment Successful to artemis'
