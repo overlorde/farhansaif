@@ -19,10 +19,8 @@ jobs:
 
           script: |
 
-            cd /var/www/farhansaif
+            cd /home/saif/deploy/farhansaif
 
-            git pull
-
-            sudo systemctl restart nginx
+            git pull origin farhansaif
 
             echo 'Deployment Successful to artemis'
