@@ -12,7 +12,7 @@ jobs:
         uses: appleboy/ssh-action@v0.1.2
         with:
           host: ${{secrets.HOST}}
-          key: ${{secrets.GITCICD_SECRET}}
+          key: ${{secrets.SSH_KEY}}
           username: ${{secrets.SSH_USER}}
 
 
