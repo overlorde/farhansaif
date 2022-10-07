@@ -19,7 +19,11 @@ jobs:
 
 
           script: |
-            mkdir test
-            cd test
-            git clone git@github.com:overlorde/farhansaif.git
+
+            mkdir projects
+
+            cd clox
+
+            git clone https://github.com/overlorde/clox.git
+
             echo 'Deployment Successful to artemis'
