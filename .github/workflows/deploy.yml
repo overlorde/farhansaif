@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Deploy some app
+      - name: Deploy farhansaif.xyz
         uses: appleboy/ssh-action@v0.1.2
         with:
           host: ${{secrets.HOST}}
@@ -17,17 +17,12 @@ jobs:
 
 
 
-
           script: |
 
-            mkdir projects
+            cd /var/www/farhansaif
 
-            cd projects
+            git pull
 
-            git clone https://github.com/overlorde/clox.git
-
-            cd clox
-
-            make
+            sudo systemctl restart nginx
 
             echo 'Deployment Successful to artemis'
