@@ -19,8 +19,8 @@ jobs:
 
           script: |
 
-            cd /home/saif/deploy/farhansaif
+            cd /home/saif/deploy
 
-            git pull origin main
+          git clone https://github.com/overlorde/farhansaif.git
 
             echo 'Deployment Successful to artemis'
