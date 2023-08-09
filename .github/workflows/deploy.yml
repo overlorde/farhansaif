@@ -21,6 +21,6 @@ jobs:
 
             cd /home/saif/deploy
 
-            git clone https://github.com/overlorde/farhansaif.git
+            git pull https://github.com/overlorde/farhansaif.git
 
             echo 'Deployment Successful to artemis'
