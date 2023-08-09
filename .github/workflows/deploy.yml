@@ -19,7 +19,7 @@ jobs:
 
           script: |
 
-            cd /home/saif/deploy
+            cd /home/saif/deploy/farhansaif
 
             git pull https://github.com/overlorde/farhansaif.git
 
