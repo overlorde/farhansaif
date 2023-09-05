@@ -1,2 +1,2 @@
 Farhan Saif Site
-Readme new
+Readme changed. some issues
