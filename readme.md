@@ -1,2 +1,5 @@
 Farhan Saif Site
-Readme changed. some issues
+
+
+* need to add the updated cv
+* need to restructure the files
