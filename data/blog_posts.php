@@ -25,7 +25,7 @@ return [
              'excerpt' => 'Short summary...',
              'content_type' => 'markdown',
              'content_file' => 'my-research-post.md',  // Create this in data/blog/posts/
-             'tags' => ['research', 'python'],
+             'tags' => ['research', 'python', 'testing'],
         ],
         // Add more posts here
         // Example with markdown file:
