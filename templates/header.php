@@ -19,8 +19,8 @@
     <title><?php echo e($config['title']); ?></title>
     <style type="text/css">
         body {
-	    background-color: black;
-	    color: white;
+	    background-color: white;
+	    color: black;
             font-size: 1.2em;
             line-height: 1.5em;
             max-width: 45em;
