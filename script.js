@@ -2,8 +2,36 @@
  * Simple animations for the portfolio site
  */
 
+// Typing effect function
+function typeWriter(element, text, speed = 100) {
+    let i = 0;
+    element.textContent = '';
+    element.classList.add('typing');
+
+    function type() {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        } else {
+            element.classList.remove('typing');
+            element.classList.add('typing-done');
+        }
+    }
+
+    type();
+}
+
 // Smooth scroll for anchor links
 document.addEventListener('DOMContentLoaded', function() {
+    // Typing effect for the main heading
+    const mainHeading = document.querySelector('#section500 h2');
+    if (mainHeading) {
+        const originalText = mainHeading.textContent;
+        setTimeout(() => {
+            typeWriter(mainHeading, originalText, 80);
+        }, 300);
+    }
     // Add smooth scrolling to all anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
