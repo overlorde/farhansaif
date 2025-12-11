@@ -8,6 +8,7 @@
             <li><a href="#section3">General Research Interest</a></li>
             <li><a href="#section5">Frequently Used Tech Stack</a></li>
             <li><a href="#section7">Courses I've TA'ed for</a></li>
+            <li><a href="/blog">Blog</a></li>
             <li><a href="#section6">Contact</a></li>
         </ul>
     </nav>
