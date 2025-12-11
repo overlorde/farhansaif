@@ -17,12 +17,16 @@
     <meta name="twitter:description" content="<?php echo e($config['twitter_description']); ?>">
     <meta name="twitter:creator" content="<?php echo e($config['twitter_creator']); ?>">
     <title><?php echo e($config['title']); ?></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style type="text/css">
         body {
 	    background-color: white;
 	    color: black;
-            font-size: 1.2em;
-            line-height: 1.5em;
+            font-family: 'JetBrains Mono', 'Courier New', Consolas, Monaco, monospace;
+            font-size: 1.1em;
+            line-height: 1.6em;
             max-width: 45em;
             margin: auto;
             padding: 0 2%;
