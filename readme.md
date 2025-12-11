@@ -141,6 +141,44 @@ return [
 
 Edit `/config/site.php` to update meta tags, Open Graph tags, and Twitter Card settings.
 
+### Adding Blog Posts
+
+Blog posts can be written in Markdown! Two options:
+
+**Option 1: Markdown Files (Recommended)**
+
+1. Create a `.md` file in `/data/blog/posts/` (e.g., `my-post.md`)
+2. Write your content in Markdown
+3. Add metadata in `/data/blog_posts.php`:
+
+```php
+[
+    'id' => 'my-post',
+    'title' => 'My Post Title',
+    'date' => '2025-12-15',
+    'excerpt' => 'Short summary...',
+    'content_type' => 'markdown',
+    'content_file' => 'my-post.md',
+    'tags' => ['research', 'python'],
+],
+```
+
+**Option 2: Inline Markdown**
+
+```php
+[
+    'id' => 'quick-post',
+    'title' => 'Quick Post',
+    'date' => '2025-12-16',
+    'excerpt' => 'Summary...',
+    'content_type' => 'markdown',
+    'content' => '## Heading\n\nSome **bold** text.',
+    'tags' => ['update'],
+],
+```
+
+Markdown supports: headings, lists, links, **bold**, *italic*, `code`, code blocks, blockquotes, and more!
+
 ## Deployment
 
 This site uses GitHub Actions for automatic deployment. Simply:

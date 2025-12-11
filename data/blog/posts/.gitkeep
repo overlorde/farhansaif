@@ -1,0 +1,11 @@
+# This directory contains blog posts in Markdown format
+#
+# To add a new post:
+# 1. Create a .md file here (e.g., my-post.md)
+# 2. Add metadata in data/blog_posts.php
+# 3. Commit and push
+#
+# Example post structure:
+# - Use Markdown syntax (headings, lists, links, code blocks)
+# - No need for HTML
+# - Keep it simple and readable

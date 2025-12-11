@@ -14,32 +14,40 @@ return [
             'title' => 'Welcome to My Blog',
             'date' => '2025-12-11',
             'excerpt' => 'First post on my new blog. Here I\'ll share insights about my research, programming experiences, and thoughts on computer systems.',
-            'content' => '
-                <p>Welcome to my blog! I\'m excited to start sharing my thoughts and experiences here.</p>
-
-                <h3>What You\'ll Find Here</h3>
-                <p>This blog will cover topics including:</p>
-                <ul>
-                    <li>Research updates on Python concurrency and multi-version execution</li>
-                    <li>Compiler engineering and LLVM toolchain experiences</li>
-                    <li>Systems programming insights</li>
-                    <li>Debugging techniques and tools</li>
-                </ul>
-
-                <h3>Stay Tuned</h3>
-                <p>I\'ll be posting regularly about my work and discoveries. Check back soon for more content!</p>
-            ',
+            'content_type' => 'markdown',  // 'markdown' or 'html'
+            'content_file' => 'welcome-to-my-blog.md',  // Markdown file in data/blog/posts/
             'tags' => ['meta', 'announcement'],
         ],
         // Add more posts here
-        // Example:
+        // Example with markdown file:
         // [
-        //     'id' => 'post-slug',
-        //     'title' => 'Post Title',
+        //     'id' => 'my-research-post',
+        //     'title' => 'My Research Update',
         //     'date' => '2025-12-15',
         //     'excerpt' => 'Short summary...',
-        //     'content' => '<p>Full post content with HTML...</p>',
+        //     'content_type' => 'markdown',
+        //     'content_file' => 'my-research-post.md',  // Create this in data/blog/posts/
         //     'tags' => ['research', 'python'],
+        // ],
+        // Example with inline markdown:
+        // [
+        //     'id' => 'quick-post',
+        //     'title' => 'Quick Post',
+        //     'date' => '2025-12-16',
+        //     'excerpt' => 'A quick update...',
+        //     'content_type' => 'markdown',
+        //     'content' => '## Heading\n\nSome **bold** text here.',
+        //     'tags' => ['update'],
+        // ],
+        // Example with HTML (legacy support):
+        // [
+        //     'id' => 'html-post',
+        //     'title' => 'HTML Post',
+        //     'date' => '2025-12-17',
+        //     'excerpt' => 'Using HTML...',
+        //     'content_type' => 'html',
+        //     'content' => '<p>HTML content here...</p>',
+        //     'tags' => ['tech'],
         // ],
     ],
 ];

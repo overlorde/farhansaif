@@ -10,7 +10,24 @@
         </p>
 
         <div class="post-content">
-            <?php echo $post['content']; ?>
+            <?php
+            // Get content based on type
+            $content = '';
+            if (!empty($post['content_file'])) {
+                // Load from markdown file
+                $content = load_markdown($post['content_file']);
+            } elseif (!empty($post['content'])) {
+                // Use inline content
+                $content = $post['content'];
+            }
+
+            // Parse markdown or use HTML directly
+            if (!empty($post['content_type']) && $post['content_type'] === 'markdown') {
+                echo parse_markdown($content);
+            } else {
+                echo $content;
+            }
+            ?>
         </div>
     </article>
 
