@@ -54,6 +54,7 @@ require __DIR__ . '/templates/header.php';
 if ($post) {
     require __DIR__ . '/templates/blog/post_single.php';
 } else {
+    $data = $blog_data; // Pass data to template
     require __DIR__ . '/templates/blog/post_list.php';
 }
 
