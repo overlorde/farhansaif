@@ -46,3 +46,36 @@ function render_section($template, $data = []) {
     extract($data);
     require __DIR__ . '/../templates/sections/' . $template . '.php';
 }
+
+/**
+ * Parse markdown to HTML
+ *
+ * @param string $markdown Markdown content
+ * @return string HTML content
+ */
+function parse_markdown($markdown) {
+    require_once __DIR__ . '/Parsedown.php';
+    $parsedown = new Parsedown();
+    return $parsedown->text($markdown);
+}
+
+/**
+ * Load markdown file from data/blog/posts/
+ *
+ * @param string $filename Markdown filename (with or without .md)
+ * @return string Markdown content
+ */
+function load_markdown($filename) {
+    // Add .md extension if not present
+    if (substr($filename, -3) !== '.md') {
+        $filename .= '.md';
+    }
+
+    $path = __DIR__ . '/../data/blog/posts/' . $filename;
+
+    if (file_exists($path)) {
+        return file_get_contents($path);
+    }
+
+    return '';
+}
