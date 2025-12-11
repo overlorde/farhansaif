@@ -38,7 +38,20 @@
       text-align: justify;
     }
 
+    /* Fade-in animation */
+    section.fade-out {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    section.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     </style>
+    <script src="script.js" defer></script>
 
 </head>
 
