@@ -26,6 +26,11 @@ farhansaif/
 │   └── sections/         # Section templates
 ├── includes/              # Helper functions
 │   └── functions.php
+├── js/                    # Client-side JavaScript (ES6 modules)
+│   ├── main.js           # Main entry point
+│   ├── typing.js         # Typing animation
+│   ├── scroll.js         # Smooth scrolling
+│   └── animations.js     # Scroll animations
 └── readme.md             # This file
 ```
 

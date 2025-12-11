@@ -71,7 +71,7 @@
     }
 
     </style>
-    <script src="script.js" defer></script>
+    <script src="js/main.js" type="module"></script>
 
 </head>
 
