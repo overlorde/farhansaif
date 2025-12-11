@@ -18,6 +18,15 @@ return [
             'content_file' => 'welcome-to-my-blog.md',  // Markdown file in data/blog/posts/
             'tags' => ['meta', 'announcement'],
         ],
+        [
+             'id' => 'my-research-post',
+             'title' => 'My Research Update',
+             'date' => '2025-12-15',
+             'excerpt' => 'Short summary...',
+             'content_type' => 'markdown',
+             'content_file' => 'my-research-post.md',  // Create this in data/blog/posts/
+             'tags' => ['research', 'python'],
+        ],
         // Add more posts here
         // Example with markdown file:
         // [
