@@ -50,6 +50,22 @@
         transform: translateY(0);
     }
 
+    /* Typing effect */
+    .typing::after {
+        content: '|';
+        animation: blink 0.7s infinite;
+        margin-left: 2px;
+    }
+
+    .typing-done::after {
+        content: '';
+    }
+
+    @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+    }
+
     </style>
     <script src="script.js" defer></script>
 
