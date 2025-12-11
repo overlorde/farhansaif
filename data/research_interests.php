@@ -10,6 +10,7 @@ return [
     'interests' => [
         'Multithreading and Concurrency',
         'Compilers',
-        'Software Reliability',
+		'Software Reliability',
+		'Debugging and Record-Replay'
     ],
 ];
